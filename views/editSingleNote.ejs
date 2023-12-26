@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Editing a Note !</h1>
+    <form action="/notes/<%=note._id%>/edit?_method=PUT" method="POST">
+        <label for="">Edit here..</label>
+        <input type="text" name="content" placeholder="Enter a note" value="<%= note.content %>">
+        <button>Edit</button>
+    </form>
+</body>
+</html>
